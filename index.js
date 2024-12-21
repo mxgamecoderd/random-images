@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 3000;
 
 // Array of image URLs
 const imageURLs = [
+    "https://i.imgur.com/plTJ4dW.jpeg",
     "https://i.imgur.com/k36urRk.jpeg",
-    "https://i.imgur.com/5qf7U0N.jpeg",
     "https://i.imgur.com/xYlOZ3H.jpeg"
 ];
 
@@ -17,8 +17,8 @@ app.get('/api/images', (req, res) => {
 
 // API endpoint to fetch images by categories
 const categories = {
-    nature: ["https://i.imgur.com/k36urRk.jpeg"],
-    animals: ["https://i.imgur.com/5qf7U0N.jpeg"],
+    nature: ["https://i.imgur.com/plTJ4dW.jpeg"],
+    animals: ["https://i.imgur.com/k36urRk.jpeg"],
     tech: ["https://i.imgur.com/xYlOZ3H.jpeg"]
 };
 
