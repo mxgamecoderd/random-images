@@ -37,7 +37,7 @@ const images = {
     ],
     naruto: [
         "https://i.imgur.com/k36urRk.jpeg",
-        "https://i.imgur.com/naruto2.jpeg",
+        "https://i.imgur.com/plTJ4dW.jpeg",
         // Add 50 Naruto images
     ],
 };
