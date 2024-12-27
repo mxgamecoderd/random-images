@@ -1,16 +1,29 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "",
+  "name": "random-images",
+  "version": "1.0.1",
+  "description": "A simple API that provides random images for use in projects or bots.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxgamecoderd/random-images.git"
+  },
+  "keywords": [
+    "dog",
+    "cat-images",
+    "api",
+    "house"
+  ],
+  "author": "mxgamecoder",
+  "license": "MIT",
+  "dependencies": {    
     "@types/node": "^18.0.6",
     "express": "^4.21.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mxgamecoderd/random-images/issues"
+  },
+  "homepage": "https://github.com/mxgamecoderd/random-images#readme"
 }
