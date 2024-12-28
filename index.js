@@ -6,19 +6,17 @@ const PORT = process.env.PORT || 3000;
 // Images categorized by type
 const images = {
     cat: [
-        "https://i.imgur.com/plTJ4dW.jpeg",
-        "https://i.imgur.com/cat2.jpeg",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        // Add 50 cat images
+        "https://i.imgur.com/WaT31HW.jpeg",
+        "https://i.imgur.com/LAr7tws.jpeg",
+        "https://i.imgur.com/Z2DHuMf.jpeg",
+        "https://i.imgur.com/n1y1xAk.jpeg",
+        "https://i.imgur.com/LjsZMpe.jpeg",
+        "https://i.imgur.com/XQ2S0g3.jpeg",
+        "https://i.imgur.com/tKYYGlR.jpeg",
+        "https://i.imgur.com/Jcfsl4f.jpeg",
+        "https://i.imgur.com/n5qRW5C.jpeg",
+        "https://i.imgur.com/Uq1rND1.jpeg",
+        "https://i.imgur.com/l9yYIs2.jpeg",
     ],
     dog: [
         "https://i.imgur.com/KqcsC0t.jpeg",
