@@ -22,7 +22,7 @@ const images = {
         "https://i.imgur.com/KqcsC0t.jpeg",
         "https://i.imgur.com/7puTZZK.jpeg",
         "https://i.imgur.com/cezeGY3.jpeg",
-        "https://i.imgur.com/GtHeRfB.jpe
+        "https://i.imgur.com/GtHeRfB.jpeg",
         "https://i.imgur.com/Buf0Ixd.jpeg",
         "https://i.imgur.com/MgrEYfO.jpeg",
         "https://i.imgur.com/Bhn5rjA.jpeg",
