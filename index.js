@@ -62,9 +62,9 @@ const images = {
         "",
     ],
     animepic: [
-        "https://i.imgur.com/house1.jpeg",
-        "https://i.imgur.com/house2.jpeg",       
-        "",
+        "https://i.imgur.com/TRDfXf5.jpeg",
+        "https://i.imgur.com/80zJonc.jpeg",       
+        "https://i.imgur.com/0CloZol.jpeg",
         "",
         "",
         "",
@@ -79,7 +79,7 @@ const images = {
     animal: [
         "https://i.imgur.com/lion1.jpeg",
         "https://i.imgur.com/lion2.jpeg",
-        "",
+        "https://i.imgur.com/0CloZol.jpeg",
         "",
         "",
         "",
