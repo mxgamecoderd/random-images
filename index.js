@@ -13,6 +13,17 @@ const images = {
     dog: [
         "https://i.imgur.com/k36urRk.jpeg",
         "https://i.imgur.com/dog2.jpeg",
+        "https://i.imgur.com/cezeGY3.jpeg",
+        "https://i.imgur.com/GtHeRfB.jpe
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
         // Add 50 dog images
     ],
     tech: [
