@@ -95,19 +95,17 @@ const images = {
         // Add 50 lion images
     ],
     naruto: [
-        "https://i.imgur.com/k36urRk.jpeg",
-        "https://i.imgur.com/plTJ4dW.jpeg",        
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        // Add 50 Naruto images
+        "https://i.imgur.com/p3Qua8A.jpeg",
+        "https://i.imgur.com/aHddYcj.jpeg",        
+        "https://i.imgur.com/zojfXYN.jpeg",
+        "https://i.imgur.com/RLziTJo.jpeg",
+        "https://i.imgur.com/Ocqq7le.jpeg",
+        "https://i.imgur.com/D8joCWg.jpeg",
+        "https://i.imgur.com/JhMjR1W.jpeg",
+        "https://i.imgur.com/jOvDv8r.jpeg",
+        "https://i.imgur.com/bi41mxU.jpeg",
+        "https://i.imgur.com/1KUIX0e.jpeg",
+        "https://i.imgur.com/XHqP2oV.jpeg",
     ],
 };
 
