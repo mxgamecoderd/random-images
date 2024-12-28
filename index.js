@@ -32,24 +32,22 @@ const images = {
         "https://i.imgur.com/6i2ja4a.jpeg",
         "https://i.imgur.com/AZLul67.jpeg",
         "https://i.imgur.com/RFP4b5J.jpeg",
-        // Add 50 dog images
     ],
-    tech: [
-        "https://i.imgur.com/tech1.jpeg",
-        "https://i.imgur.com/tech2.jpeg",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        // Add 50 tech images
+    cars: [
+        "https://i.imgur.com/cvVlidG.jpeg",
+        "https://i.imgur.com/Ch8Dgz6.jpeg",
+        "https://i.imgur.com/rtTgJgq.jpeg",
+        "https://i.imgur.com/VWiK65R.jpeg",
+        "https://i.imgur.com/q43nC4k.jpeg",
+        "https://i.imgur.com/OmYtexa.jpeg",
+        "https://i.imgur.com/tWm41Of.jpeg",
+        "https://i.imgur.com/QP3xKY5.jpeg",
+        "https://i.imgur.com/opuM54W.jpeg",
+        "https://i.imgur.com/8W8q9hq.jpeg",
+        "https://i.imgur.com/Kgp2Rmm.jpeg",
+        "https://i.imgur.com/Hdt5wFw.jpeg",
     ],
-    teacher: [
+    random: [
         "https://i.imgur.com/teacher1.jpeg",
         "https://i.imgur.com/teacher2.jpeg",       
         "",
@@ -62,9 +60,8 @@ const images = {
         "",
         "",
         "",
-        // Add 50 teacher images
     ],
-    house: [
+    animepic: [
         "https://i.imgur.com/house1.jpeg",
         "https://i.imgur.com/house2.jpeg",       
         "",
@@ -79,7 +76,7 @@ const images = {
         "",
         // Add 50 house images
     ],
-    lion: [
+    animal: [
         "https://i.imgur.com/lion1.jpeg",
         "https://i.imgur.com/lion2.jpeg",
         "",
@@ -92,7 +89,6 @@ const images = {
         "",
         "",
         "",
-        // Add 50 lion images
     ],
     naruto: [
         "https://i.imgur.com/p3Qua8A.jpeg",
