@@ -19,7 +19,7 @@ const images = {
         "https://i.imgur.com/l9yYIs2.jpeg",
     ],
     dog: [
-        "https://i.ibb.co/MMpyjGt/images-2.jpg",
+        "https://i.imgur.com/KqcsC0t.jpeg",
         "https://i.imgur.com/7puTZZK.jpeg",
         "https://i.imgur.com/cezeGY3.jpeg",
         "https://i.imgur.com/GtHeRfB.jpeg",
@@ -49,7 +49,7 @@ const images = {
     ],
     random: [
         "https://i.imgur.com/blTiqKZ.jpeg",
-        "https://i.imgur.com/DgRSydW.jpeg",       
+        "https://i.imgur.com/DgRSydW.jpeg",
         "https://i.imgur.com/hM2pBWN.jpeg",
         "https://i.imgur.com/OxqN9si.jpeg",
         "https://i.imgur.com/iq053CN.jpeg",
@@ -63,7 +63,7 @@ const images = {
     ],
     animepic: [
         "https://i.imgur.com/TRDfXf5.jpeg",
-        "https://i.imgur.com/80zJonc.jpeg",       
+        "https://i.imgur.com/80zJonc.jpeg",
         "https://i.imgur.com/0CloZol.jpeg",
         "https://i.imgur.com/OL3Co3w.jpeg",
         "https://i.imgur.com/sVyw4lY.jpeg",
@@ -91,7 +91,7 @@ const images = {
     ],
     naruto: [
         "https://i.imgur.com/p3Qua8A.jpeg",
-        "https://i.imgur.com/aHddYcj.jpeg",        
+        "https://i.imgur.com/aHddYcj.jpeg",
         "https://i.imgur.com/zojfXYN.jpeg",
         "https://i.imgur.com/RLziTJo.jpeg",
         "https://i.imgur.com/Ocqq7le.jpeg",
@@ -106,6 +106,8 @@ const images = {
 
 // Endpoint to fetch all categories
 app.get('/api/images', (req, res) => {
+    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+    res.setHeader('Content-Type', 'application/json');
     res.json({ success: true, categories: Object.keys(images) });
 });
 
@@ -113,6 +115,8 @@ app.get('/api/images', (req, res) => {
 app.get('/api/images/:category', (req, res) => {
     const category = req.params.category.toLowerCase();
     if (images[category]) {
+        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+        res.setHeader('Content-Type', 'application/json');
         res.json({ success: true, images: images[category] });
     } else {
         res.status(404).json({ success: false, message: 'Category not found' });
