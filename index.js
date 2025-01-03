@@ -19,7 +19,7 @@ const images = {
         "https://i.imgur.com/l9yYIs2.jpeg",
     ],
     dog: [
-        "https://i.imgur.com/KqcsC0t.jpeg",
+        "https://i.ibb.co/MMpyjGt/images-2.jpg",
         "https://i.imgur.com/7puTZZK.jpeg",
         "https://i.imgur.com/cezeGY3.jpeg",
         "https://i.imgur.com/GtHeRfB.jpeg",
@@ -33,14 +33,79 @@ const images = {
         "https://i.imgur.com/AZLul67.jpeg",
         "https://i.imgur.com/RFP4b5J.jpeg",
     ],
-    // Other categories follow the same structure
+    cars: [
+        "https://i.imgur.com/cvVlidG.jpeg",
+        "https://i.imgur.com/Ch8Dgz6.jpeg",
+        "https://i.imgur.com/rtTgJgq.jpeg",
+        "https://i.imgur.com/VWiK65R.jpeg",
+        "https://i.imgur.com/q43nC4k.jpeg",
+        "https://i.imgur.com/OmYtexa.jpeg",
+        "https://i.imgur.com/tWm41Of.jpeg",
+        "https://i.imgur.com/QP3xKY5.jpeg",
+        "https://i.imgur.com/opuM54W.jpeg",
+        "https://i.imgur.com/8W8q9hq.jpeg",
+        "https://i.imgur.com/Kgp2Rmm.jpeg",
+        "https://i.imgur.com/Hdt5wFw.jpeg",
+    ],
+    random: [
+        "https://i.imgur.com/blTiqKZ.jpeg",
+        "https://i.imgur.com/DgRSydW.jpeg",       
+        "https://i.imgur.com/hM2pBWN.jpeg",
+        "https://i.imgur.com/OxqN9si.jpeg",
+        "https://i.imgur.com/iq053CN.jpeg",
+        "https://i.imgur.com/D2gcuOd.jpeg",
+        "https://i.imgur.com/fjj3u2P.jpeg",
+        "https://i.imgur.com/zCgUfHZ.jpeg",
+        "https://i.imgur.com/2n3eYGp.jpeg",
+        "https://i.imgur.com/nOETzSR.jpeg",
+        "https://i.imgur.com/8ZV2ezQ.jpeg",
+        "https://i.imgur.com/ttrUlAq.jpeg",
+    ],
+    animepic: [
+        "https://i.imgur.com/TRDfXf5.jpeg",
+        "https://i.imgur.com/80zJonc.jpeg",       
+        "https://i.imgur.com/0CloZol.jpeg",
+        "https://i.imgur.com/OL3Co3w.jpeg",
+        "https://i.imgur.com/sVyw4lY.jpeg",
+        "https://i.imgur.com/Fz9pSgk.jpeg",
+        "https://i.imgur.com/kiaOkaD.jpeg",
+        "https://i.imgur.com/92mE6bj.jpeg",
+        "https://i.imgur.com/Y2IcseR.jpeg",
+        "https://i.imgur.com/9lZM7mm.jpeg",
+        "https://i.imgur.com/UdLpkyd.jpeg",
+        "https://i.imgur.com/otd2fmd.jpeg",
+    ],
+    animal: [
+        "https://i.imgur.com/S894xWH.jpeg",
+        "https://i.imgur.com/isQZSmH.jpeg",
+        "https://i.imgur.com/7N1H14N.jpeg",
+        "https://i.imgur.com/bpSn2zQ.jpeg",
+        "https://i.imgur.com/mDLiud4.jpeg",
+        "https://i.imgur.com/7hjzed7.jpeg",
+        "https://i.imgur.com/x1MwjB6.jpeg",
+        "https://i.imgur.com/nmj7oEk.jpeg",
+        "https://i.imgur.com/F3Ci8hp.jpeg",
+        "https://i.imgur.com/50T5P20.jpeg",
+        "https://i.imgur.com/uXISCrL.jpeg",
+        "https://i.imgur.com/9MKyAZh.jpeg",
+    ],
+    naruto: [
+        "https://i.imgur.com/p3Qua8A.jpeg",
+        "https://i.imgur.com/aHddYcj.jpeg",        
+        "https://i.imgur.com/zojfXYN.jpeg",
+        "https://i.imgur.com/RLziTJo.jpeg",
+        "https://i.imgur.com/Ocqq7le.jpeg",
+        "https://i.imgur.com/D8joCWg.jpeg",
+        "https://i.imgur.com/JhMjR1W.jpeg",
+        "https://i.imgur.com/jOvDv8r.jpeg",
+        "https://i.imgur.com/bi41mxU.jpeg",
+        "https://i.imgur.com/1KUIX0e.jpeg",
+        "https://i.imgur.com/XHqP2oV.jpeg",
+    ],
 };
 
 // Endpoint to fetch all categories
 app.get('/api/images', (req, res) => {
-    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Origin', '*'); // For CORS
     res.json({ success: true, categories: Object.keys(images) });
 });
 
@@ -48,16 +113,7 @@ app.get('/api/images', (req, res) => {
 app.get('/api/images/:category', (req, res) => {
     const category = req.params.category.toLowerCase();
     if (images[category]) {
-        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
-        res.setHeader('Content-Type', 'application/json');
-        res.setHeader('Access-Control-Allow-Origin', '*'); // For CORS
-        res.json({
-            success: true,
-            images: images[category].map(url => ({
-                url,
-                optimizedUrl: `${url}?q=100`, // Example for adding quality parameters
-            })),
-        });
+        res.json({ success: true, images: images[category] });
     } else {
         res.status(404).json({ success: false, message: 'Category not found' });
     }
