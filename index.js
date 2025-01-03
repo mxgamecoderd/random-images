@@ -19,7 +19,7 @@ const images = {
         "https://i.imgur.com/l9yYIs2.jpeg",
     ],
     dog: [
-        "https://i.imgur.com/KqcsC0t.jpeg",
+        "https://i.ibb.co/MMpyjGt/images-2.jpg",
         "https://i.imgur.com/7puTZZK.jpeg",
         "https://i.imgur.com/cezeGY3.jpeg",
         "https://i.imgur.com/GtHeRfB.jpeg",
